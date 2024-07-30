@@ -3,6 +3,11 @@ body {
     height: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .w-05 {
     width: 5% !important;
 }
@@ -67,8 +72,237 @@ body {
     width: 95% !important;
 }
 
-.menu-bar {
+.sulphur-point-light {
+    font-family: "Sulphur Point", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.sulphur-point-regular {
+    font-family: "Sulphur Point", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sulphur-point-bold {
+    font-family: "Sulphur Point", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.header-menu {
     position: absolute;
-    top: 70px;
-    left: 70px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.menu-show-hide.ng-hide {
+    opacity: 0;
+}
+
+.menu-show-hide.ng-hide-add,
+.menu-show-hide.ng-hide-remove {
+    transition: all linear 0.3s;
+}
+
+.header-menu-content {
+    background-color: white;
+    height: 300px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-menu-content p {
+    margin: 0;
+}
+
+.header-menu-name {
+    font-size: 28px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.header-menu-position {
+    font-size: 22px;
+    text-transform: capitalize;
+    line-height: 1;
+}
+
+.header-menu-list div {
+    margin-right: 100px;
+
+}
+
+.header-menu-list div p {
+    font-family: "Sulphur Point", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+
+}
+
+#btn {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+    z-index: 3;
+    border: none;
+    outline: none;
+    background-color: white;
+    width: 80px;
+    height: 80px;
+}
+
+#btn span {
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    top: 50%;
+    left: 50%;
+    background: #262626;
+    border-radius: 2px;
+    overflow: hidden;
+    transition: all 0.3s linear;
+}
+
+#btn span::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: gray;
+    transition: all 0.3s linear;
+}
+
+#btn span:nth-child(1) {
+    animation: span-first-off 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+#btn span:nth-child(2) {
+    animation: span-second-off 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+#btn span:nth-child(3) {
+    animation: span-third-off 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+#btn.on:hover span::before {
+    width: 100%;
+    transition: all 0.3s linear;
+}
+
+#btn.on span:nth-child(1) {
+    animation: span-first-on 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+#btn.on span:nth-child(2) {
+    animation: span-second-on 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+#btn.on span:nth-child(3) {
+    animation: span-third-on 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes span-first-on {
+    0% {
+        transform: translate(-50%, -300%);
+    }
+
+    30% {
+        transform: translate(-50%, -50%);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+}
+
+@keyframes span-first-off {
+    0% {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    30% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -300%);
+    }
+}
+
+@keyframes span-second-on {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+
+    25% {
+        background: white;
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    100% {
+        transform: translate(-150%, -50%) scale(0);
+    }
+}
+
+@keyframes span-second-off {
+    0% {
+        transform: translate(-150%, -50%) scale(0);
+    }
+
+    25% {
+        background: white;
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes span-third-on {
+    0% {
+        transform: translate(-50%, 200%);
+    }
+
+    30% {
+        transform: translate(-50%, -50%);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+}
+
+@keyframes span-third-off {
+    0% {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    30% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, 200%);
+    }
 }

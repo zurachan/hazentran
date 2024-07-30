@@ -1,0 +1,64 @@
+<!-- cover -->
+<div class="container-fluid">
+    <button id="btn" ng-click="vm.toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <div class="header-menu menu-show-hide" ng-show="vm.showMenu">
+        <div class="header-menu-content">
+            <div>
+                <p class="header-menu-name sulphur-point-bold">Tran Phuong Thao</p>
+                <p class="header-menu-position sulphur-point-regular">UX/UI designer</p>
+            </div>
+            <div class="d-flex header-menu-list">
+                <div>
+                    <p>Menu</p>
+                    <br>
+                    <p>
+                        <a ui-sref="home">
+                            Home
+                        </a>
+                    </p>
+                    <p>
+                        <a ui-sref="project">
+                            Project
+                        </a>
+                    </p>
+                    <p>
+                        <a ui-sref="about">
+                            About
+                        </a>
+                    </p>
+                    <p>
+                        <a ui-sref="contact">
+                            Contact
+                        </a>
+                    </p>
+                </div>
+                <div>
+                    <p>Project</p>
+                    <br>
+                    <p>
+                        <a ui-sref="redeli">
+                            reDeli
+                        </a>
+                    </p>
+                    <p>
+                        <a ui-sref="calldoctors">
+                            Call Doctors
+                        </a>
+                    </p>
+                    <p>
+                        <a ui-sref="cake">
+                            Cake By VPBank
+                        </a>
+                    </p>
+                </div>
+                <div style="width: 200px; margin: 0;"></div>
+            </div>
+        </div>
+    </div>
+
+    <ui-view></ui-view>
+</div>
