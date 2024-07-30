@@ -2,7 +2,9 @@
     'use strict'
     angular.module('app').config(
         function ($stateProvider, $locationProvider, Constant) {
-            $locationProvider.hashPrefix('')
+            // $locationProvider.hashPrefix('')
+            $locationProvider.html5Mode(true);
+
             let state = Constant.TEMPLATE_URL
             state.forEach((item) => {
                 $stateProvider.state(item.key, {
