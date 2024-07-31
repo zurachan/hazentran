@@ -1,11 +1,12 @@
 <!-- cover -->
 <div class="container-fluid">
-    <button id="btn" ng-click="vm.toggleMenu()">
+    <button id="btn-menu-bar" ng-click="vm.toggleMenu()">
         <span></span>
         <span></span>
         <span></span>
     </button>
-    <div class="header-menu menu-show-hide" ng-show="vm.showMenu">
+    <div class="header-menu menu-show-hide" ng-show="vm.showMenu" off-click="vm.showMenu=false"
+        off-click-activator="vm.showMenu">
         <div class="header-menu-content">
             <div>
                 <p class="header-menu-name sulphur-point-bold">Tran Phuong Thao</p>
@@ -15,43 +16,18 @@
                 <div>
                     <p>Menu</p>
                     <br>
-                    <p>
-                        <a ui-sref="home">
-                            Home
-                        </a>
-                    </p>
-                    <p>
-                        <a ui-sref="project">
-                            Project
-                        </a>
-                    </p>
-                    <p>
-                        <a ui-sref="about">
-                            About
-                        </a>
-                    </p>
-                    <p>
-                        <a ui-sref="contact">
-                            Contact
+                    <p ng-repeat="item in vm.Menu">
+                        <a ui-sref="{{item.path}}" ng-class="vm.Current == item.path ? 'active':''">
+                            {{item.name}}
                         </a>
                     </p>
                 </div>
                 <div>
                     <p>Project</p>
                     <br>
-                    <p>
-                        <a ui-sref="redeli">
-                            reDeli
-                        </a>
-                    </p>
-                    <p>
-                        <a ui-sref="calldoctors">
-                            Call Doctors
-                        </a>
-                    </p>
-                    <p>
-                        <a ui-sref="cake">
-                            Cake By VPBank
+                    <p ng-repeat="item in vm.Project">
+                        <a ui-sref="{{item.path}}" ng-class="vm.Current == item.path ? 'active':''">
+                            {{item.name}}
                         </a>
                     </p>
                 </div>
@@ -59,6 +35,5 @@
             </div>
         </div>
     </div>
-
     <ui-view></ui-view>
 </div>

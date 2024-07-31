@@ -41,7 +41,7 @@
             },
             {
                 key: 'redeli',
-                url: '/project/redeli',
+                url: '/redeli',
                 templateUrl: '/components/project/redeli/redeli.html',
                 controller: 'redeli as vm',
                 lazyLoadFiles: [
@@ -50,7 +50,7 @@
             },
             {
                 key: 'calldoctors',
-                url: '/project/calldoctors',
+                url: '/calldoctors',
                 templateUrl: '/components/project/calldoctors/calldoctors.html',
                 controller: 'calldoctors as vm',
                 lazyLoadFiles: [
@@ -59,7 +59,7 @@
             },
             {
                 key: 'cake',
-                url: '/project/cake',
+                url: '/cake',
                 templateUrl: '/components/project/cake/cake.html',
                 controller: 'cake as vm',
                 lazyLoadFiles: [
