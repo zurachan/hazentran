@@ -1,11 +1,18 @@
 html,
 body {
     height: 100%;
+    overflow-x: hidden;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+}
+
+p,
+span {
+    line-height: 1 !important;
+    margin: 0 !important;
 }
 
 .w-05 {
@@ -90,6 +97,41 @@ a {
     font-style: normal;
 }
 
+.montserrat-light {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.montserrat-regular {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserrat-medium {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.montserrat-semibold {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.montserrat-bold {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
 .header-menu {
     position: absolute;
     top: 0;
@@ -107,6 +149,37 @@ a {
     transition: all linear 0.3s;
 }
 
+.footer-content {
+    background-color: white;
+    height: 240px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-menu {
+    display: flex;
+}
+
+.footer-menu a {
+    font-family: "Sulphur Point", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #727272;
+    margin: 0 40px !important;
+}
+
+.footer-icon {
+    display: flex;
+    margin-left: 90px;
+}
+
+.footer-icon i {
+    font-size: 28px;
+}
+
 .header-menu-content {
     background-color: white;
     height: 300px;
@@ -122,13 +195,11 @@ a {
 .header-menu-name {
     font-size: 28px;
     text-transform: uppercase;
-    line-height: 1;
 }
 
 .header-menu-position {
     font-size: 22px;
     text-transform: capitalize;
-    line-height: 1;
 }
 
 .header-menu-list div {
@@ -140,7 +211,6 @@ a {
     font-weight: 400;
     font-style: normal;
     font-size: 24px;
-
 }
 
 #btn-menu-bar {
@@ -151,7 +221,7 @@ a {
     z-index: 3;
     border: none;
     outline: none;
-    background-color: white;
+    background-color: transparent;
     width: 30px;
     height: 30px;
 }
@@ -308,4 +378,114 @@ a {
 
 .active {
     color: #8C8C8C;
+}
+
+.cube6 {
+    width: 584px;
+    height: 548px;
+    left: -148px;
+    top: 0px;
+    position: absolute;
+}
+
+.cube6 img {
+    width: 100%;
+    height: 100%;
+}
+
+.main-title {
+    width: 894px;
+    height: 340px;
+    position: absolute;
+    top: 173px;
+    left: 512px;
+}
+
+.main-title p,
+span {
+    margin: 0;
+    letter-spacing: 0;
+}
+
+.btn-tooltip {
+    border-radius: 12px;
+    padding: 5px 15px;
+    /* background-color: #262626; */
+    line-height: 1;
+    rotate: -20deg;
+    background-image: linear-gradient(to right, #000000, #000000, #000000, #A0A0A0);
+}
+
+.btn-tooltip span {
+    color: white;
+}
+
+.group134 {
+    width: 753px;
+    height: 757px;
+    left: 1264px;
+    top: 109px;
+    position: absolute;
+    rotate: -121deg;
+}
+
+.group134 img {
+    width: 100%;
+    height: 100%;
+}
+
+.project-container {
+    height: auto;
+    background-image: url("../img/purple.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 36px;
+    z-index: 0;
+}
+
+.project {
+    z-index: 1;
+    padding: 36px;
+}
+
+.project-detail {
+    z-index: 2;
+    border-radius: 40px;
+
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 88px 54px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-mockup-img {
+    height: 320px;
+    object-fit: cover;
+}
+
+.project-detail-text {
+    padding: 40px 0;
+    color: white;
+    font-size: 48px;
+}
+
+.project-desc {
+    width: 896px;
+    height: auto;
+}
+
+.scroll-top {
+    background: none;
+    border: none;
+    position: absolute;
+    right: 0;
+    bottom: 250px;
 }

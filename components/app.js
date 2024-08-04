@@ -21,9 +21,11 @@
         ]
         vm.showMenu = false
         vm.Current
+        vm.showScrollTop = false
         OnInit()
-
         vm.toggleMenu = () => vm.showMenu = !vm.showMenu
+
+        vm.backToTop = () => $('html,body').animate({ scrollTop: 0 }, 700);
 
         $scope.$watch('vm.showMenu', function (isShow) {
             var ele = document.getElementById('btn-menu-bar');
@@ -46,5 +48,10 @@
             _.defer(() => { $scope.$apply() })
             $.unblockUI()
         }
+
+        $('html,body').on('scroll', function (e) {
+            vm.showScrollTop = e.target.scrollTop > 1080
+            _.defer(() => { $scope.$apply() })
+        });
     }
 })()
