@@ -1,8 +1,8 @@
 <!-- cover -->
 <button id="btn-menu-bar" ng-click="vm.toggleMenu()">
-    <span></span>
-    <span></span>
-    <span></span>
+    <span ng-class="vm.Current == 'contact' ? 'bg-white' : 'bg-black'"></span>
+    <span ng-class="vm.Current == 'contact' ? 'bg-white' : 'bg-black'"></span>
+    <span ng-class="vm.Current == 'contact' ? 'bg-white' : 'bg-black'"></span>
 </button>
 <div class="header-menu menu-show-hide" ng-show="vm.showMenu" off-click="vm.showMenu=false"
     off-click-activator="vm.showMenu">
@@ -41,9 +41,7 @@
 </button>
 
 <div class="d-flex justify-content-center">
-    <div style="width: 94px;">
-        <hr class="solid">
-    </div>
+    <hr class="solid" style="width: 94px; margin: 0;">
 </div>
 <div class="footer-content">
     <p class="sulphur-point-bold text-uppercase" style="font-size: 28px;">Tran Phuong Thao</p>

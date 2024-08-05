@@ -232,7 +232,6 @@ span {
     height: 4px;
     top: 50%;
     left: 50%;
-    background: #262626;
     border-radius: 2px;
     overflow: hidden;
     transition: all 0.3s linear;
@@ -272,6 +271,7 @@ span {
 #btn-menu-bar.on span:nth-child(1) {
     animation: span-first-on 0.5s ease-in-out;
     animation-fill-mode: forwards;
+    background: black !important;
 }
 
 #btn-menu-bar.on span:nth-child(2) {
@@ -282,6 +282,7 @@ span {
 #btn-menu-bar.on span:nth-child(3) {
     animation: span-third-on 0.5s ease-in-out;
     animation-fill-mode: forwards;
+    background: black !important;
 }
 
 @keyframes span-first-on {
@@ -410,7 +411,6 @@ span {
 .btn-tooltip {
     border-radius: 12px;
     padding: 5px 15px;
-    /* background-color: #262626; */
     line-height: 1;
     rotate: -20deg;
     background-image: linear-gradient(to right, #000000, #000000, #000000, #A0A0A0);
@@ -469,12 +469,25 @@ span {
 .project-mockup-img {
     height: 320px;
     object-fit: cover;
+    transition: all 0.5s;
 }
 
 .project-detail-text {
     padding: 40px 0;
     color: white;
     font-size: 48px;
+}
+
+.project-detail-text p {
+    transition: all 0.5s;
+}
+
+.project-detail:hover .project-mockup-img {
+    transform: scale(1.1);
+}
+
+.project-detail:hover .project-detail-text p {
+    transform: scale(1.1);
 }
 
 .project-desc {
@@ -488,4 +501,23 @@ span {
     position: absolute;
     right: 0;
     bottom: 250px;
+}
+
+.contact-container {
+    height: 1013px;
+    background-image: url("../img/purple.png");
+    background-repeat: no-repeat;
+    padding: 50px;
+    z-index: 0;
+}
+
+.contact-desc-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+}
+
+.contact-desc {
+    width: 557px;
+    height: auto;
 }
