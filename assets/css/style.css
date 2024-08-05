@@ -487,7 +487,15 @@ span {
 }
 
 .project-detail:hover .project-detail-text p {
-    transform: scale(1.1);
+    transform: translateY(-10px);
+}
+
+.project-icon {
+    transition: all 0.5s;
+}
+
+.project-detail:hover .project-icon {
+    transform: scale(1.3);
 }
 
 .project-desc {

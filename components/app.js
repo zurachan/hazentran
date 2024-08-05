@@ -34,6 +34,7 @@
         })
 
         $transitions.onSuccess({}, function () {
+            vm.backToTop()
             vm.Current = $location.path().replace('/', '')
             if (!vm.Current) vm.Current = 'home'
             vm.showMenu = false
