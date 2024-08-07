@@ -132,6 +132,24 @@ span {
     font-style: normal;
 }
 
+.segoe-ui-light {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.segoe-ui-regular {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.segoe-ui-bold {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
 .header-menu {
     position: absolute;
     top: 0;
@@ -181,7 +199,8 @@ span {
 }
 
 .header-menu-content {
-    background-color: white;
+    /* background-color: white; */
+    background: rgba(255, 255, 255, 0.95);
     height: 300px;
     padding: 50px;
     display: flex;
@@ -540,8 +559,33 @@ span {
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.5);
     padding: 46px 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .contact-glass p {
     color: rgba(255, 255, 255, 0.7)
+}
+
+.about-header-container {
+    width: 1131px;
+    height: 546px;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: red;
+    z-index: 1;
+}
+
+.about-star {
+    width: 282px;
+    height: 282px;
+    background-image: url("../img/p90\ 1.png");
+    position: absolute;
+    top: -141px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
 }
