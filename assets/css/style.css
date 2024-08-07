@@ -575,7 +575,6 @@ span {
     top: 40px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: red;
     z-index: 1;
 }
 
@@ -584,8 +583,64 @@ span {
     height: 282px;
     background-image: url("../img/p90\ 1.png");
     position: absolute;
-    top: -141px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: -100px;
+    left: 45%;
+    transform: translateX(-45%);
     z-index: 2;
+}
+
+.about-header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.about-header .about-header-img {
+    width: 50%;
+    height: 100%;
+    background-color: blue;
+}
+
+.about-header .about-header-desc {
+    width: 50%;
+    height: 100%;
+    padding-left: 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-header-desc .sulphur-point-regular {
+    color: #000000;
+    font-size: 40px;
+}
+
+.about-header-desc .segoe-ui-regular {
+    color: #4A4A4A;
+    font-size: 20px;
+    line-height: normal !important;
+}
+
+.about-content {
+    width: 1024px;
+    height: 100%;
+    padding-left: 30px;
+    border-left: #D4D4D4 1px solid;
+}
+
+.about-content-block {
+    width: 100%;
+    height: 100%;
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+
+.about-content-block .sulphur-point-bold {
+    font-size: 24px;
+    margin-bottom: 24px !important;
+}
+
+.about-content-block .segoe-ui-regular {
+    font-size: 22px;
+    line-height: normal !important;
 }
