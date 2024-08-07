@@ -529,3 +529,19 @@ span {
     width: 557px;
     height: auto;
 }
+
+.contact-glass {
+    width: 565px;
+    height: 378px;
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 40px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 46px 72px;
+}
+
+.contact-glass p {
+    color: rgba(255, 255, 255, 0.7)
+}
