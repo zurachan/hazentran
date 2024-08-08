@@ -199,7 +199,6 @@ span {
 }
 
 .header-menu-content {
-    /* background-color: white; */
     background: rgba(255, 255, 255, 0.95);
     height: 300px;
     padding: 50px;
@@ -623,24 +622,204 @@ span {
 
 .about-content {
     width: 1024px;
-    height: 100%;
     padding-left: 30px;
     border-left: #D4D4D4 1px solid;
 }
 
 .about-content-block {
     width: 100%;
-    height: 100%;
-    margin-top: 28px;
-    margin-bottom: 28px;
+    margin: 28px 0px !important;
+    position: relative;
+}
+
+.about-content-star {
+    background-image: url("../img/Color\ Shape\ 01\ 4.png");
+    background-size: 100% 100%;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: -7px;
+    left: -48px;
 }
 
 .about-content-block .sulphur-point-bold {
     font-size: 24px;
-    margin-bottom: 24px !important;
+    color: #000000;
+    margin-bottom: 16px !important;
 }
 
 .about-content-block .segoe-ui-regular {
     font-size: 22px;
+    color: #464646;
     line-height: normal !important;
+}
+
+.redeli-header {
+    width: 100%;
+    height: 1132px;
+    background-image: url("../img/13.png");
+    margin-bottom: 179px;
+}
+
+.redeli-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.redeli-center {
+    height: auto;
+}
+
+.redeli-block {
+    margin-bottom: 80px;
+    width: 1204px;
+}
+
+.redeli-star {
+    width: auto;
+    height: auto;
+}
+
+.redeli-star img {
+    width: 72px;
+    height: 72px;
+}
+
+.redeli-problem {
+    display: flex;
+    justify-content: start;
+}
+
+.redeli-problem .redeli-star {
+    margin-right: 48px;
+}
+
+.redeli-problem-content {
+    width: 1079px;
+    height: auto;
+}
+
+.redeli-problem .segoe-ui-bold {
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 24px !important;
+    line-height: normal !important;
+}
+
+.redeli-problem .segoe-ui-regular {
+    font-size: 28px;
+    color: #000000;
+    line-height: normal !important;
+}
+
+.redeli-solution {
+    display: flex;
+    justify-content: end;
+}
+
+.redeli-solution .redeli-star {
+    margin-left: 48px;
+}
+
+.redeli-solution-content {
+    width: 895px;
+    height: auto;
+}
+
+.redeli-solution .segoe-ui-bold {
+    font-size: 36px;
+    color: #000000;
+    text-align: end;
+    margin-bottom: 24px !important;
+    line-height: normal !important;
+}
+
+.redeli-solution .segoe-ui-regular {
+    font-size: 28px;
+    color: #000000;
+    text-align: end;
+    line-height: normal !important;
+}
+
+.redeli-recommend {
+    height: auto;
+}
+
+.redeli-recommend .segoe-ui-bold {
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 24px !important;
+    line-height: normal !important;
+}
+
+.redeli-recommend .segoe-ui-regular {
+    font-size: 28px;
+    color: #000000;
+    line-height: normal !important;
+}
+
+.redeli-last-bg {
+    background-image: url('../img/mockup2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 672px;
+}
+
+.redeli-last-star {
+    display: flex;
+    justify-content: center;
+}
+
+.redeli-last-star img {
+    width: 77px;
+    height: 72px;
+}
+
+.redeli-style-guide {
+    background-image: url('../img/BG.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+}
+
+.redeli-style {
+    width: 1644px;
+    height: auto;
+    padding: 72px 0px;
+}
+
+.redeli-style-title {
+    margin-bottom: 72px;
+}
+
+.redeli-style-title .segoe-ui-bold {
+    font-size: 36px;
+    color: #FFFFFF;
+    line-height: normal !important;
+}
+
+.redeli-style-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.redeli-color-palette {
+    width: 915px;
+    height: 745px;
+}
+
+.redeli-typography {
+    width: 584px;
+    height: 544px;
+    margin-bottom: 50px;
+}
+
+.redeli-icons {
+    width: 584px;
+    height: 531px;
 }
