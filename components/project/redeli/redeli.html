@@ -72,10 +72,92 @@
             <p class="segoe-ui-bold">Style guide</p>
         </div>
         <div class="redeli-style-container">
-            <div class="redeli-color-palette bg-white"></div>
+            <div class="redeli-color-palette bg-white">
+                <p class="poppins-bold">Color palette</p>
+                <div class="color-palette-type">
+                    <p class="poppins-regular">Primary color</p>
+                    <div class="redeli-primary-color">
+                        <div class="d-flex align-items-center"
+                            style="height: 40px;color: #FFF; font-size: 8px; line-height:10px !important; background-color: {{vm.primaryColor}};">
+                            <p>
+                                {{vm.primaryColor}}
+                            </p>
+                        </div>
+                        <div class="w-100 d-flex">
+                            <div ng-repeat="c in vm.primaryListColor"
+                                style="width: 30px; height: 30px; background-color: {{c}};"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="color-palette-type">
+                    <p class="poppins-regular">Neutral color</p>
+                    <div class="redeli-color">
+                        <p class="poppins-regular">Gray</p>
+                        <div class="d-flex">
+                            <div ng-repeat="c in vm.neutralColor">
+                                <div class="color-block" style="background-color: {{c}};">
+                                </div>
+                                <p class="poppins-regular color-block-desc">{{c}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="color-palette-type">
+                    <p class="poppins-regular">Segmatic color</p>
+                    <div class="redeli-segmatic-color">
+                        <div class="redeli-color" ng-repeat="c in vm.segmaticColor">
+                            <p class="poppins-regular">{{c.name}}</p>
+                            <div class="d-flex">
+                                <div ng-repeat="i in c.listColor">
+                                    <div class="color-block" style='background-color: {{i}};'>
+                                    </div>
+                                    <p class="poppins-regular color-block-desc">{{i}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div>
-                <div class="redeli-typography bg-white"></div>
-                <div class="redeli-icons bg-white"></div>
+                <div class="redeli-typography bg-white">
+                    <div style="margin-bottom: 70px;">
+                        <p class="poppins-bold">Typography</p>
+                        <div class="color-palette-type">
+                            <p class="poppins-regular">
+                                Below you’ll find sample text that I use to test my fonts. I’ve included an ever-growing
+                                selection of character and symbol combinations to check your kerning, collisions and
+                                overall
+                                tone. Copy and paste into your desired testing program (I use Illustrator) and give your
+                                characters a good twice over.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="poppins-bold">Font Family: Poppins</p>
+                        <div class="color-palette-type d-flex align-items-center justify-content-between">
+                            <p class="poppins-medium" style="font-size: 96px; line-height: 120px !important;">Aa</p>
+
+                            <div>
+                                <p class="poppins-medium" style="font-size: 16px; line-height: 20px !important;">
+                                    ABCDEFGHIKLMNOPQRSTUVWXYZ</p>
+                                <p class="poppins-medium mt-2" style="font-size: 16px; line-height: 20px !important;">
+                                    abcdefghiklmnopqruvxwyz</p>
+                                <p class="poppins-medium mt-2" style="font-size: 16px; line-height: 20px !important;">
+                                    0123456789</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="redeli-icons bg-white">
+                    <p class="poppins-bold">Icons</p>
+                    <div class="d-flex flex-wrap">
+                        <div ng-repeat="i in vm.listIcon"
+                            style="width: 24px; height: 24px; margin-right: 20px;margin-left: 20px; margin-bottom: 24px;">
+                            <i class="iconsax" icon-name="{{i.value}}"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

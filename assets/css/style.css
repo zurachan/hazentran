@@ -79,77 +79,6 @@ span {
     width: 95% !important;
 }
 
-.sulphur-point-light {
-    font-family: "Sulphur Point", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.sulphur-point-regular {
-    font-family: "Sulphur Point", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.sulphur-point-bold {
-    font-family: "Sulphur Point", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.montserrat-light {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.montserrat-regular {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.montserrat-medium {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.montserrat-semibold {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-}
-
-.montserrat-bold {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.segoe-ui-light {
-    font-family: "Segoe UI", Arial, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.segoe-ui-regular {
-    font-family: "Segoe UI", Arial, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.segoe-ui-bold {
-    font-family: "Segoe UI", Arial, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
 .header-menu {
     position: absolute;
     top: 0;
@@ -809,17 +738,94 @@ span {
 }
 
 .redeli-color-palette {
-    width: 915px;
-    height: 745px;
+    width: 850px;
+    height: fit-content;
+    padding: 24px;
+    border-radius: 24px;
+}
+
+.redeli-color-palette .poppins-bold {
+    font-size: 28px;
+    line-height: 35px !important;
+    color: #000000;
+}
+
+.redeli-color-palette .poppins-regular {
+    font-size: 16px;
+    line-height: 24px !important;
+    color: #000000;
+}
+
+.redeli-primary-color {
+    width: 210px;
+}
+
+.redeli-color .poppins-regular {
+    font-size: 10px;
+    line-height: 16px !important;
+    color: #000000;
+}
+
+.redeli-segmatic-color {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.redeli-segmatic-color .redeli-color {
+    margin-right: 50px;
+    margin-bottom: 20px;
 }
 
 .redeli-typography {
     width: 584px;
-    height: 544px;
+    height: fit-content;
+    padding: 24px;
+    border-radius: 24px;
     margin-bottom: 50px;
+}
+
+.redeli-typography .poppins-bold {
+    font-size: 28px;
+    line-height: 35px !important;
+    color: #000000;
+}
+
+.redeli-typography .poppins-regular {
+    font-size: 16px;
+    line-height: 22px !important;
+    color: #000000;
 }
 
 .redeli-icons {
     width: 584px;
     height: 531px;
+    padding: 24px;
+    border-radius: 24px;
+}
+
+.redeli-icons .poppins-bold {
+    font-size: 28px;
+    line-height: 35px !important;
+    color: #000000;
+    text-align: center;
+}
+
+.redeli-icons i {
+    font-size: 24px;
+}
+
+.color-block {
+    width: 50px;
+    height: 36px;
+}
+
+.color-block-desc {
+    font-size: 8px;
+    line-height: 12px !important;
+    color: #A9A9A9 !important;
+}
+
+.color-palette-type {
+    margin: 50px 0 0 0;
 }
