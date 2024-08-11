@@ -152,13 +152,25 @@
                 <div class="redeli-icons bg-white">
                     <p class="poppins-bold">Icons</p>
                     <div class="d-flex flex-wrap">
-                        <div ng-repeat="i in vm.listIcon"
-                            style="width: 24px; height: 24px; margin-right: 20px;margin-left: 20px; margin-bottom: 24px;">
+                        <div ng-repeat="i in vm.listIcon" style="width: 24px; height: 24px; margin: 12px 20px;">
                             <i class="iconsax" icon-name="{{i.value}}"></i>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="redeli-container">
+    <div class="redeli-center">
+        <div class="redeli-block redeli-process">
+            <p class="segoe-ui-bold">Our Process</p>
+            <p class="segoe-ui-regular">
+                Click the button below to download our process book for a detailed look at our research and how our
+                final designs & features came together.
+            </p>
+            <button class="redeli-process-btn" ng-click="vm.viewProcessBook()">Process book</button>
         </div>
     </div>
 </div>

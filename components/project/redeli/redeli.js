@@ -12,17 +12,314 @@
             { name: 'Info', listColor: ['#ECF9FF', '#B0E5FF', '#90DAFF', '#60CAFF', '#3FBFFF', '#2C86B3', '#26759C'] },
             { name: 'Warning', listColor: ['#FFFBEC', '#FFF0AF', '#FFEA8E', '#FFE15E', '#FFDB3D', '#B3992B', '#9C8625'] }
         ]
+        vm.listIcon =
+            [
+                {
+                    "value": "heart",
+                    "id": 1
+                },
+                {
+                    "value": "calendar-2",
+                    "id": 2
+                },
+                {
+                    "value": "home-2",
+                    "id": 3
+                },
+                {
+                    "value": "search-normal-2",
+                    "id": 4
+                },
+                {
+                    "value": "arrow-up",
+                    "id": 5
+                },
+                {
+                    "value": "arrow-down",
+                    "id": 6
+                },
+                {
+                    "value": "arrow-right",
+                    "id": 7
+                },
+                {
+                    "value": "arrow-left",
+                    "id": 8
+                },
+                {
+                    "value": "chevron-left-circle",
+                    "id": 9
+                },
+                {
+                    "value": "chevron-right-circle",
+                    "id": 10
+                },
+                {
+                    "value": "chevron-down-circle",
+                    "id": 11
+                },
+                {
+                    "value": "chevron-up-circle",
+                    "id": 12
+                },
+                {
+                    "value": "user-2",
+                    "id": 13
+                },
+                {
+                    "value": "location",
+                    "id": 14
+                },
+                {
+                    "value": "media-sliders-3",
+                    "id": 15
+                },
+                {
+                    "value": "setting-1",
+                    "id": 16
+                },
+                {
+                    "value": "phone-ringing",
+                    "id": 17
+                },
+                {
+                    "value": "x-circle",
+                    "id": 18
+                },
+                {
+                    "value": "add-circle",
+                    "id": 19
+                },
+                {
+                    "value": "add",
+                    "id": 20
+                },
+                {
+                    "value": "minus",
+                    "id": 21
+                },
+                {
+                    "value": "x",
+                    "id": 22
+                },
+                {
+                    "value": "moon",
+                    "id": 23
+                },
+                {
+                    "value": "sun",
+                    "id": 24
+                },
+                {
+                    "value": "cloud",
+                    "id": 25
+                },
+                {
+                    "value": "cloud-add",
+                    "id": 26
+                },
+                {
+                    "value": "cloud-minus",
+                    "id": 27
+                },
+                {
+                    "value": "cloud-x-1",
+                    "id": 28
+                },
+                {
+                    "value": "cloud-sunny",
+                    "id": 29
+                },
+                {
+                    "value": "cloud-notif",
+                    "id": 30
+                },
+                {
+                    "value": "cloud-rain",
+                    "id": 31
+                },
+                {
+                    "value": "cloud-snow",
+                    "id": 32
+                },
+                {
+                    "value": "flash-speed",
+                    "id": 33
+                },
+                {
+                    "value": "drop",
+                    "id": 34
+                },
+                {
+                    "value": "wind-1",
+                    "id": 35
+                },
+                {
+                    "value": "wind-2",
+                    "id": 36
+                },
+                {
+                    "value": "cloud-fog",
+                    "id": 37
+                },
+                {
+                    "value": "sun-fog",
+                    "id": 38
+                },
+                {
+                    "value": "sun",
+                    "id": 39
+                },
+                {
+                    "value": "dollar-circle",
+                    "id": 40
+                },
+                {
+                    "value": "receipt-text",
+                    "id": 41
+                },
+                {
+                    "value": "filter-tick",
+                    "id": 42
+                },
+                {
+                    "value": "emoji-happy",
+                    "id": 43
+                },
+                {
+                    "value": "emoji-normal",
+                    "id": 44
+                },
+                {
+                    "value": "emoji-sad",
+                    "id": 45
+                },
+                {
+                    "value": "filter",
+                    "id": 46
+                },
+                {
+                    "value": "clock",
+                    "id": 47
+                },
+                {
+                    "value": "wifi-square",
+                    "id": 48
+                },
+                {
+                    "value": "smart-car",
+                    "id": 49
+                },
+                {
+                    "value": "pet",
+                    "id": 50
+                },
+                {
+                    "value": "info-badge",
+                    "id": 51
+                },
+                {
+                    "value": "notepad",
+                    "id": 52
+                },
+                {
+                    "value": "eye-slash",
+                    "id": 53
+                },
+                {
+                    "value": "eye",
+                    "id": 54
+                },
+                {
+                    "value": "verify",
+                    "id": 55
+                },
+                {
+                    "value": "tick-circle",
+                    "id": 56
+                },
+                {
+                    "value": "arrow-right",
+                    "id": 57
+                },
+                {
+                    "value": "arrow-left",
+                    "id": 58
+                },
+                {
+                    "value": "arrow-down",
+                    "id": 59
+                },
+                {
+                    "value": "arrow-up",
+                    "id": 60
+                },
+                {
+                    "value": "toggle-off-round",
+                    "id": 61
+                },
+                {
+                    "value": "toggle-on-round",
+                    "id": 62
+                },
+                {
+                    "value": "calendar-tick",
+                    "id": 63
+                },
+                {
+                    "value": "calendar-x",
+                    "id": 64
+                },
+                {
+                    "value": "cloud-lightning",
+                    "id": 65
+                },
+                {
+                    "value": "x-circle",
+                    "id": 66
+                },
+                {
+                    "value": "home-2",
+                    "id": 67
+                },
+                {
+                    "value": "calendar-2",
+                    "id": 68
+                },
+                {
+                    "value": "heart",
+                    "id": 69
+                },
+                {
+                    "value": "user-2",
+                    "id": 70
+                },
+                {
+                    "value": "clock",
+                    "id": 71
+                },
+                {
+                    "value": "dislike",
+                    "id": 72
+                },
+                {
+                    "value": "like",
+                    "id": 73
+                },
+                {
+                    "value": "camera",
+                    "id": 74
+                }
+            ]
 
-        vm.icons = ['heart', 'calendar-2', 'home-2', 'search-normal-2', 'arrow-up', 'arrow-down', 'arrow-right', 'arrow-left', 'chevron-left-circle', 'chevron-right-circle', 'chevron-down-circle', 'chevron-up-circle', 'user-2', 'location', 'media-sliders-3', 'setting-1', 'call-calling', 'close-circle', 'add-circle', 'add', 'minus', 'close', 'moon', 'sun', 'cloud', 'cloud-plus', 'cloud-minus', 'cloud-cross', 'cloud-sunny', 'cloud-notif', 'cloud-drizzle', 'cloud-snow', 'flash', 'drop', 'wind', 'wind-2', 'cloud-fog', 'sun-fog', 'sun', 'dollar-circle', 'receipt-text', 'filter-tick', 'emoji-happy', 'emoji-normal', 'emoji-sad', 'filter', 'clock', 'wifi-square', 'smart-car', 'pet', 'information', 'menu-board', 'eye-slash', 'eye', 'verify', 'tick-circle', 'arrow-right', 'arrow-left', 'arrow-down', 'arrow-up', 'toggle-off-circle', 'toggle-on-circle', 'calendar-tick', 'calendar-remove', 'cloud-lightning', 'close-circle', 'home-2', 'calendar-2', 'heart', 'user', 'clock', 'dislike', 'like', 'camera']
-        vm.listIcon
         OnInit()
         function OnInit() {
             $.blockUI()
-
-            vm.listIcon = vm.icons.map((str, index) => ({ value: str, id: index + 1 }));
-
-            console.log('enter redeli')
             $.unblockUI()
+        }
+
+        vm.viewProcessBook = () => {
+            window.open("https://drive.google.com/file/d/1keSpdhT9R3nc8pelqAvM_5q2bo9miT2p/view", '_blank');
         }
     }
 })()

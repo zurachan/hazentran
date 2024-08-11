@@ -714,10 +714,11 @@ span {
     background-position: center center;
     display: flex;
     justify-content: center;
+    margin-bottom: 80px;
 }
 
 .redeli-style {
-    width: 1644px;
+    width: 1500px;
     height: auto;
     padding: 72px 0px;
 }
@@ -799,7 +800,7 @@ span {
 
 .redeli-icons {
     width: 584px;
-    height: 531px;
+    height: auto;
     padding: 24px;
     border-radius: 24px;
 }
@@ -809,6 +810,7 @@ span {
     line-height: 35px !important;
     color: #000000;
     text-align: center;
+    margin-bottom: 24px;
 }
 
 .redeli-icons i {
@@ -828,4 +830,30 @@ span {
 
 .color-palette-type {
     margin: 50px 0 0 0;
+}
+
+.redeli-process .segoe-ui-bold {
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 24px !important;
+    line-height: normal !important;
+}
+
+.redeli-process .segoe-ui-regular {
+    font-size: 28px;
+    color: #000000;
+    margin-bottom: 24px !important;
+    line-height: normal !important;
+}
+
+.redeli-process-btn {
+    font-family: "Sulphur Point", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    background: none;
+    border: 1px solid #000000;
+    border-radius: 24px;
+    padding: 16px 48px;
+    font-size: 22px;
+    line-height: 29px !important;
 }
