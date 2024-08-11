@@ -1050,3 +1050,195 @@ span {
     display: flex;
     justify-content: center;
 }
+
+.cake-cover {
+    width: auto;
+    height: auto;
+    margin-bottom: 179px;
+
+}
+
+.cake-research {
+    width: 1500px;
+    margin-bottom: 80px;
+}
+
+.cake-research .segoe-ui-regular {
+    font-size: 28px;
+    line-height: 42px !important;
+    color: #1E1E1E;
+}
+
+.cake-advantage {
+    width: 1500px;
+    margin-bottom: 80px;
+}
+
+.cake-advantage .segoe-ui-bold {
+    font-size: 38px;
+    line-height: 44px !important;
+    color: #CB006F;
+    text-align: center;
+    margin-bottom: 40px !important;
+}
+
+.cake-advantage-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cake-advantage-detail {
+    width: 278px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advantage-no {
+    width: 66px;
+    height: 66px;
+    border: 2px solid #CB006F;
+    background: #f1f1ef;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.advantage-no .segoe-ui-regular {
+    font-size: 40px;
+    line-height: 46px !important;
+    color: #CB006F;
+}
+
+.cake-up {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cake-up img {
+    margin-top: 40px;
+}
+
+.cake-user-flow {
+    width: 100%;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.cake-wf {
+    margin-bottom: 80px;
+}
+
+.cake-color-palette {
+    width: 400px;
+}
+
+.cake-color-palette .be-vietnam-pro-bold,
+.cake-typography .be-vietnam-pro-bold {
+    font-size: 28px;
+    line-height: 35px !important;
+    color: #000000;
+}
+
+.cake-color-type {
+    margin-top: 40px;
+}
+
+.cake-color-type .be-vietnam-pro-regular {
+    line-height: normal !important;
+}
+
+.cake-color-primary {
+    width: 210px;
+    height: 40px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.cake-color-primary p {
+    color: #FFFFFF;
+    font-size: 8px;
+    line-height: 10px !important;
+}
+
+.cake-color-primary-range {
+    display: flex;
+}
+
+.cake-color-primary-range div {
+    width: 30px;
+    height: 30px;
+}
+
+.cake-color-neutral .be-vietnam-pro-regular {
+    font-size: 10px;
+    line-height: 16px !important;
+    color: #000;
+}
+
+.cake-color-neutral-range {
+    display: flex;
+}
+
+.cake-color-neutral-range div div {
+    height: 36px;
+    width: 50px;
+}
+
+.cake-color-neutral-range .be-vietnam-pro-regular {
+    font-size: 8px;
+    line-height: 10px !important;
+    color: #A9A9A9;
+}
+
+.cake-color-segmatic {
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.cake-color-segmatic .be-vietnam-pro-regular {
+    font-size: 10px;
+    line-height: 16px !important;
+    color: #000;
+}
+
+.cake-color-segmatic-range {
+    display: flex;
+}
+
+.cake-color-segmatic-range div div {
+    height: 36px;
+    width: 50px;
+}
+
+.cake-color-segmatic-range .be-vietnam-pro-regular {
+    font-size: 8px;
+    line-height: 10px !important;
+    color: #A9A9A9;
+}
+
+.cake-typography {
+    width: 584px;
+    height: fit-content;
+    padding: 24px;
+    border-radius: 24px;
+    margin-bottom: 50px;
+}
+
+.cake-typography .be-vietnam-pro-bold {
+    font-size: 28px;
+    line-height: 35px !important;
+    color: #000000;
+}
+
+.cake-typography .be-vietnam-pro-regular {
+    font-size: 16px;
+    line-height: 22px !important;
+    color: #000000;
+}
