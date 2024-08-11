@@ -13,7 +13,7 @@
         </div>
         <div class="d-flex header-menu-list">
             <div>
-                <p>Menu</p>
+                <p><b>Menu</b></p>
                 <br>
                 <p ng-repeat="item in vm.Menu">
                     <a ui-sref="{{item.path}}" ng-class="vm.Current == item.path ? 'active':''">
@@ -22,7 +22,7 @@
                 </p>
             </div>
             <div>
-                <p>Project</p>
+                <p><b>Project</b></p>
                 <br>
                 <p ng-repeat="item in vm.Project">
                     <a ui-sref="{{item.path}}" ng-class="vm.Current == item.path ? 'active':''">
