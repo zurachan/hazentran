@@ -6,7 +6,8 @@
         OnInit()
         function OnInit() {
             $.blockUI()
-            console.log('enter home')
+            $(".cube6").addClass("cube6-transfer ");
+            $(".group134").addClass("group134-transfer ");
             $.unblockUI()
         }
     }

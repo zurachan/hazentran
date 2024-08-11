@@ -6,7 +6,6 @@
         OnInit()
         function OnInit() {
             $.blockUI()
-            console.log('enter about')
             $.unblockUI()
         }
     }

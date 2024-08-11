@@ -131,7 +131,6 @@
         OnInit()
         function OnInit() {
             $.blockUI()
-            console.log(vm.neutralColorShade)
             $.unblockUI()
         }
     }

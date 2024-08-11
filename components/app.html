@@ -16,7 +16,8 @@
                 <p><b>Menu</b></p>
                 <br>
                 <p ng-repeat="item in vm.Menu">
-                    <a ui-sref="{{item.path}}" ng-class="vm.Current == item.path ? 'active':''">
+                    <a ui-sref="{{item.path}}" class="cursor-pointer" ng-class="vm.Current == item.path ? 'active':''"
+                        ng-click="vm.onChangePage(item.path)">
                         {{item.name}}
                     </a>
                 </p>

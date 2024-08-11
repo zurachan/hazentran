@@ -12,15 +12,15 @@
                     "/components/home/home.js",
                 ]
             },
-            {
-                key: 'project',
-                url: '/project',
-                templateUrl: '/components/project/project.html',
-                controller: 'project as vm',
-                lazyLoadFiles: [
-                    "/components/project/project.js",
-                ]
-            },
+            // {
+            //     key: 'project',
+            //     url: '/project',
+            //     templateUrl: '/components/project/project.html',
+            //     controller: 'project as vm',
+            //     lazyLoadFiles: [
+            //         "/components/project/project.js",
+            //     ]
+            // },
             {
                 key: 'about',
                 url: '/about',

@@ -79,6 +79,10 @@ span {
     width: 95% !important;
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
+
 .header-menu {
     position: absolute;
     top: 0;
@@ -333,8 +337,13 @@ span {
     width: 584px;
     height: 548px;
     left: -148px;
-    top: 0px;
+    top: 400px;
     position: absolute;
+}
+
+.cube6-transfer {
+    transition: linear 1.2s;
+    transform: translateY(-400px);
 }
 
 .cube6 img {
@@ -372,14 +381,19 @@ span {
     width: 753px;
     height: 757px;
     left: 1264px;
-    top: 109px;
+    top: 609px;
     position: absolute;
-    rotate: -121deg;
+}
+
+.group134-transfer {
+    transition: linear 1.2s;
+    transform: translateY(-500px);
 }
 
 .group134 img {
     width: 100%;
     height: 100%;
+    rotate: -121deg;
 }
 
 .project-container {

@@ -22,10 +22,12 @@
         vm.showMenu = false
         vm.Current
         vm.showScrollTop = false
+        vm.enterProject = false
         OnInit()
         vm.toggleMenu = () => vm.showMenu = !vm.showMenu
 
-        vm.backToTop = () => $('html,body').animate({ scrollTop: 0 }, 700);
+        vm.backToTop = () => $('html,body').animate({ scrollTop: 0 }, 700)
+
 
         $scope.$watch('vm.showMenu', function (isShow) {
             var ele = document.getElementById('btn-menu-bar');
@@ -34,10 +36,11 @@
         })
 
         $transitions.onSuccess({}, function () {
-            vm.backToTop()
+            if (!vm.enterProject) vm.backToTop()
             vm.Current = $location.path().replace('/', '')
             if (!vm.Current) vm.Current = 'home'
             vm.showMenu = false
+            vm.enterProject = false
         })
 
         function OnInit() {
@@ -54,5 +57,17 @@
             vm.showScrollTop = e.target.scrollTop > 1080
             _.defer(() => { $scope.$apply() })
         });
+
+        vm.onChangePage = (path) => {
+            if (path == 'project') {
+                if (vm.Current != 'home') {
+                    $state.dispose()
+                    $state.go('home')
+                    vm.enterProject = true
+                }
+                vm.showMenu = false
+                $('html,body').animate({ scrollTop: 2100 }, 700)
+            }
+        }
     }
 })()
