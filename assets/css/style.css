@@ -584,9 +584,8 @@ span {
 }
 
 .redeli-header {
-    width: 100%;
-    height: 1132px;
-    background-image: url("../img/13.png");
+    width: auto;
+    height: auto;
     margin-bottom: 179px;
 }
 
@@ -598,6 +597,9 @@ span {
 }
 
 .redeli-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     height: auto;
 }
 
@@ -687,14 +689,6 @@ span {
     font-size: 28px;
     color: #000000;
     line-height: normal !important;
-}
-
-.redeli-last-bg {
-    background-image: url('../img/mockup2.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 672px;
 }
 
 .redeli-last-star {
@@ -856,4 +850,203 @@ span {
     padding: 16px 48px;
     font-size: 22px;
     line-height: 29px !important;
+}
+
+.cd-header {
+    width: auto;
+    height: auto;
+    margin-bottom: 179px;
+}
+
+.cd-persona {
+    width: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.cd-persona img {
+    padding: 12px;
+    margin: 12px;
+}
+
+.cd-value-prop {
+    width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.value-prop-detail {
+    padding: 0 32px;
+    text-align: center;
+}
+
+.value-prop-detail img {
+    margin-bottom: 20px;
+}
+
+.value-prop-detail .segoe-ui-regular {
+    font-size: 24px;
+    line-height: 36px !important;
+    color: #000000;
+}
+
+.cd-user-flow {
+    width: 1500px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.cd-user-flow .segoe-ui-regular {
+    font-size: 24px;
+    line-height: 36px !important;
+    color: rgba(0, 0, 0, 0.8)
+}
+
+.cd-color-container {
+    width: 70%;
+    padding-right: 20px;
+}
+
+.cd-icon-container {
+    width: 30%;
+    padding-left: 20px;
+}
+
+.cd-color {}
+
+.cd-color .inter-regular,
+.cd-font .inter-regular,
+.cd-icon .inter-regular {
+    font-size: 26px;
+    line-height: 35px !important;
+    color: #13151A;
+}
+
+.cd-color-primary {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.cd-color-neutral {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.cd-color-primary .inter-regular,
+.cd-color-neutral .inter-regular {
+    font-size: 18px;
+    line-height: 24px !important;
+    color: #13151A;
+}
+
+.cd-color-block {
+    margin-bottom: 40px;
+}
+
+.main-color {
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-color .inter-regular {
+    color: #FFFFFF;
+    font-size: 16px !important;
+    line-height: 22px !important;
+}
+
+.main-color-range,
+.main-color-tint {
+    display: flex;
+}
+
+.cd-font {}
+
+.cd-icon {}
+
+.cd-icon-detail {
+    margin-right: 16px;
+    margin-bottom: 14px;
+}
+
+.cd-icon-detail i {
+    font-size: 24px;
+}
+
+.cd-font-sample {
+    display: flex;
+    align-items: center;
+}
+
+.cd-font-sample .inter-bold {
+    color: #5E6B81;
+    font-size: 120px;
+    line-height: 145px !important;
+    margin-right: 50px !important;
+}
+
+.cd-font-sample div .inter-semibold {
+    font-size: 32px;
+    line-height: 38px !important;
+    color: #000000;
+}
+
+.cd-font-sample div .inter-medium {
+    font-size: 24px;
+    line-height: 32px !important;
+    color: #5E6B81;
+}
+
+.inter-sample {
+    margin-right: 40px;
+    border-radius: 12px;
+    padding: 8px 12px;
+    display: flex;
+    background: #f5f6f8;
+
+}
+
+.inter-demo {
+    width: 45px;
+    height: 50px;
+    background: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.inter-demo .inter-regular {
+    font-size: 24px;
+    line-height: 32px !important;
+}
+
+.inter-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inter-desc p {
+    font-size: 16px;
+    line-height: 22px !important;
+    color: #000000;
+}
+
+.inter-desc span {
+    font-size: 12px;
+    line-height: 16px !important;
+    color: #5E6B81
+}
+
+.cd-vid {
+    display: flex;
+    justify-content: center;
 }
