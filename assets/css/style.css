@@ -1083,6 +1083,12 @@ span {
     color: #1E1E1E;
 }
 
+.cake-research .segoe-ui-bold {
+    font-size: 24px;
+    line-height: 42px !important;
+    color: #1E1E1E;
+}
+
 .cake-advantage {
     width: 1500px;
     margin-bottom: 80px;
@@ -1255,4 +1261,13 @@ span {
     font-size: 16px;
     line-height: 22px !important;
     color: #000000;
+}
+
+.cake-ut {
+    text-align: center;
+}
+
+.cake-ut .segoe-ui-regular {
+    font-size: 24px;
+    color: #000;
 }
