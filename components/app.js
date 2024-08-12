@@ -52,12 +52,6 @@
             _.defer(() => { $scope.$apply() })
             $.unblockUI()
         }
-
-        $('html,body').on('scroll', function (e) {
-            vm.showScrollTop = e.target.scrollTop > 1080
-            _.defer(() => { $scope.$apply() })
-        });
-
         vm.onChangePage = (path) => {
             if (path == 'project') {
                 if (vm.Current != 'home') {
@@ -69,5 +63,11 @@
                 $('html,body').animate({ scrollTop: 2100 }, 700)
             }
         }
+        $('html,body').on('scroll', function (e) {
+            vm.showScrollTop = e.target.scrollTop > 1080
+            _.defer(() => { $scope.$apply() })
+        });
+
+        document.addEventListener('contextmenu', event => event.preventDefault());
     }
 })()
