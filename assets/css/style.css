@@ -513,7 +513,7 @@ span {
 
 .about-header-container {
     width: 1131px;
-    height: 546px;
+    height: 100%;
     position: absolute;
     top: 40px;
     left: 50%;
@@ -541,7 +541,6 @@ span {
 .about-header .about-header-img {
     width: 50%;
     height: 100%;
-    background-color: blue;
 }
 
 .about-header .about-header-desc {
@@ -655,7 +654,7 @@ span {
 }
 
 .redeli-problem .segoe-ui-regular {
-    font-size: 28px;
+    font-size: 24px;
     color: #000000;
     line-height: normal !important;
 }
@@ -683,7 +682,7 @@ span {
 }
 
 .redeli-solution .segoe-ui-regular {
-    font-size: 28px;
+    font-size: 24px;
     color: #000000;
     text-align: end;
     line-height: normal !important;
@@ -701,7 +700,7 @@ span {
 }
 
 .redeli-recommend .segoe-ui-regular {
-    font-size: 28px;
+    font-size: 24px;
     color: #000000;
     line-height: normal !important;
 }
@@ -1079,7 +1078,7 @@ span {
 }
 
 .cake-research .segoe-ui-regular {
-    font-size: 28px;
+    font-size: 24px;
     line-height: 42px !important;
     color: #1E1E1E;
 }
